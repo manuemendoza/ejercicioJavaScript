@@ -1,15 +1,19 @@
-
 let radio = Number(prompt("Introduce el Radio"));
-let diametro = (2 * radio);
-let resultado = (radio * Math.PI) ;
+let radio2 = (radio ** 2);
 
 console.log(radio);
 console.log(diametro);
 console.log(resultado)
 
-
 function calculaArea() {
-    alert(resultado)
-    return  diametro * Math.PI ;
+    return radio2 * Math.PI
 }
-calculaArea()
+
+function otroCalculo(areaDesdeLaFunc) {
+    alert(areaDesdeLaFunc - 10)
+}
+
+let area = calculaArea()
+otroCalculo(area)
+
+//  esto es un llamado de funcion y proceso
