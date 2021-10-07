@@ -1,43 +1,26 @@
-let contraseñaUsuario = (prompt('Escriba su contraseña'));
 const contraseñaGuardada = 'manuel';
-
 let intentos = 3;
+var nuevoIntento
 
-// for (let i = 1; i <= intentos; i--) {
-
-//     let otrointento = prompt('otro intento')
-//     console.log(intentos);
-//     if (contraseñaUsuario === contraseñaGuardada) {
-//         alert('Contraseña Correcta')
-
-//     } else {
-//         alert('Contraseña Incorrecta')
-//     }
-
-// }
-
-do {
-    let otrointento = prompt('vuelva a probar')
-
-
-
-} while (intentos >= 0); {
-    intentos--
-    console.log(intentos);
+for (intentos; intentos > 0; intentos--) {
+    console.log('1 pasada por el for');
+    var contraseñaUsuario = (prompt('Escriba su contraseña'));
+    if (contraseñaUsuario === contraseñaGuardada) {
+        alert('contraseña correcta');
+        intentos = 0
+    } else {
+        alert('No es correcta ' + 'Te quedan ' + (0 + (intentos - 1)) + ' intentos');
+    }
 }
 
-// while (condition) {
+// do {
+//     if (contraseñaUsuario === contraseñaGuardada) {
+//         alert('contraseña correcta');
 
-// }
+//     } else {
+//         alert('no es correcta');
+//     }
 
+//     intentos--
 
-
-
-
-
-// if (contraseñaUsuario === contraseñaGuardada) {
-//     alert('Contraseña Correcta')
-
-// }else {
-//     alert('Contraseña Incorrecta')
-// }
+// } while (intentos > 0);
